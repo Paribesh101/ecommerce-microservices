@@ -2,10 +2,12 @@ package com.ecommerce.orderservice.service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import com.ecommerce.orderservice.exception.OutOfStockException;
 import com.ecommerce.orderservice.kafka.OrderProducer;
 import com.ecommerce.orderservice.model.Order;
 import com.ecommerce.orderservice.repository.OrderRepository;
-import com.ecommerce.orderservice.exception.OutOfStockException;
+
 import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
