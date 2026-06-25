@@ -1,0 +1,22 @@
+<div class="order-container">
+    <h2>Place an order</h2>
+
+    <input
+        type="text"
+        placeholder="Product Name"
+        [(ngModel)]="productName" />
+
+    <input
+        type="number"
+        placeholder="Quantity"
+        [(ngModel)]="quantity" />
+
+    <input
+        type="number"
+        placeholder="Price"
+        [(ngModel)]="price" />
+        
+    <button (click)="placeOrder()">Place Order</button>
+
+    <p>{{ message }}</p>
+</div>
